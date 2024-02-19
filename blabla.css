@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Kelly+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -16,12 +16,12 @@
 .main h1 {
   position: absolute;
   font-size: 96px;
-  font-family: "Fjalla One", sans-serif;
+  font-family: "Londrina Solid", sans-serif;
 }
 .main h1:nth-child(1) {
   color: #fff;
-  text-shadow: -2px 2px 0px #183954, -4px 4px 0px #183954, -6px 6px 0px #183954,
-    -8px 8px 0px #183954, -12px 12px 50px rgba(0, 0, 0, 0.5);
+  /*   text-shadow: -2px 2px 0px #183954, -4px 4px 0px #183954, -6px 6px 0px #183954,
+    -8px 8px 0px #183954, -12px 12px 25px rgba(0, 0, 0, 0.5); */
 }
 .main h1:nth-child(2) {
   color: #17466d;

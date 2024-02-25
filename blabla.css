@@ -1,44 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.main {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #183954;
+.website-struktura {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 0.5fr 5fr 1fr;
 }
-.main h1 {
+.menu {
+  background-color: #001f3f;
+  width: 100%;
+  height: 75px;
+  position: static;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1Fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+.menu {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.menu a {
+  font-style: none;
+  text-decoration: none;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-size: 24px;
+  color: #20b2aa;
+}
+
+.menu a:hover {
+  color: #40e0d0;
+}
+.menu img {
+  width: 130px;
+  height: 30px;
+}
+.menu img:hover {
+  animation: animejsn 1.5s ease-in-out;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  background-color: #001f3f;
+}
+.bottom {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+}
+.Rejbek h1 {
   position: absolute;
-  font-size: 96px;
+  font-size: 150px;
   font-family: "Londrina Solid", sans-serif;
 }
-.main h1:nth-child(1) {
+.Rejbek {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.develop {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  grid-template-rows: 1fr;
+  font-family: "Londrina Solid", sans-serif;
+  color: white;
+  font-size: 40px;
+}
+.pozdrav {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  grid-template-rows: 1fr;
+  font-family: "Londrina Solid", sans-serif;
+  color: white;
+  font-size: 40px;
+}
+.pozdrav div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+}
+.Rejbek h1:nth-child(1) {
   color: #fff;
   /*   text-shadow: -2px 2px 0px #183954, -4px 4px 0px #183954, -6px 6px 0px #183954,
     -8px 8px 0px #183954, -12px 12px 25px rgba(0, 0, 0, 0.5); */
 }
-.main h1:nth-child(2) {
-  color: #17466d;
+.Rejbek h1:nth-child(2) {
+  color: #2196f3;
+  opacity: 0.5;
   animation: animate 3s ease-in-out infinite;
 }
-.main h1:nth-child(3) {
+.Rejbek h1:nth-child(3) {
   opacity: 0.5;
   color: #2196f3;
   animation: animate 5s ease-in-out infinite;
 }
 
-.main h1:nth-child(4) {
+.Rejbek h1:nth-child(4) {
   opacity: 1;
   color: #2196f3;
   animation: animate 4s ease-in-out infinite;
 }
-
+@keyframes animejsn {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
 @keyframes animate {
   0%,
   100% {

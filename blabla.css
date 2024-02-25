@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,15 +9,16 @@
 .website-struktura {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 0.5fr 5fr 1fr;
+  grid-template-rows: 0.5fr 7fr 16fr;
 }
 .menu {
-  background-color: #001f3f;
+  padding: 10px;
+  background-color: #145b5e;
   width: 100%;
   height: 75px;
   position: static;
   display: grid;
-  grid-template-columns: 1fr 1fr 1Fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 3fr 1Fr 1fr 1fr 1fr;
   grid-template-rows: auto;
 }
 .menu {
@@ -29,14 +31,14 @@
   text-decoration: none;
   font-family: "Sofia Sans Semi Condensed", sans-serif;
   font-size: 24px;
-  color: #20b2aa;
+  color: white;
 }
 
 .menu a:hover {
-  color: #40e0d0;
+  color: #00ffe5;
 }
 .menu img {
-  width: 130px;
+  width: 100%;
   height: 30px;
 }
 .menu img:hover {
@@ -47,24 +49,33 @@
   height: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
   justify-content: center;
-  background-color: #001f3f;
+  background-color: #145b5e;
 }
 .bottom {
   width: 100%;
-  height: 100px;
-  background-color: red;
+  height: 100%;
+  background-color: #145b5e;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 2fr 2fr;
+  padding-left: 30px;
+  padding-right: 30px;
+  column-gap: 30px;
+  row-gap: 30px;
 }
 .Rejbek h1 {
   position: absolute;
-  font-size: 150px;
+  font-size: 200px;
   font-family: "Londrina Solid", sans-serif;
 }
 .Rejbek {
-  display: flex;
-  justify-content: center;
-  align-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
 }
 .develop {
   display: grid;
@@ -72,7 +83,7 @@
   grid-template-rows: 1fr;
   font-family: "Londrina Solid", sans-serif;
   color: white;
-  font-size: 40px;
+  font-size: 54px;
 }
 .pozdrav {
   display: grid;
@@ -80,7 +91,7 @@
   grid-template-rows: 1fr;
   font-family: "Londrina Solid", sans-serif;
   color: white;
-  font-size: 40px;
+  font-size: 54px;
 }
 .pozdrav div:nth-child(1) {
   display: flex;
@@ -108,6 +119,33 @@
   opacity: 1;
   color: #2196f3;
   animation: animate 4s ease-in-out infinite;
+}
+.text_nahore {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  color: white;
+  font-family: "Fjalla One", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  opacity: 0.8;
+  grid-column: 1/3;
+}
+.levonahore {
+  background-color: #d094e5;
+  border-radius: 50px;
+}
+.pravonahore {
+  background-color: #a3dcd4;
+  border-radius: 50px;
+}
+.levodole {
+  background-color: #e8b89c;
+  border-radius: 50px;
+}
+.pravodole {
+  background-color: #bddff9;
+  border-radius: 50px;
 }
 @keyframes animejsn {
   0% {

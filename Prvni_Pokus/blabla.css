@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.website-struktura {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 0.5fr 7fr 16fr;
+}
+.menu {
+  padding: 10px;
+  background-color: #145b5e;
+  width: 100%;
+  height: 75px;
+  position: static;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1Fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+.menu {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.menu a {
+  font-style: none;
+  text-decoration: none;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  font-size: 24px;
+  color: white;
+}
+
+.menu a:hover {
+  color: #00ffe5;
+}
+.menu img {
+  width: 100%;
+  height: 30px;
+}
+.menu img:hover {
+  animation: animejsn 1.5s ease-in-out;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+  justify-content: center;
+  background-color: #145b5e;
+}
+.bottom {
+  width: 100%;
+  height: 100%;
+  background-color: #145b5e;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 2fr 2fr;
+  padding-left: 30px;
+  padding-right: 30px;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+.Rejbek h1 {
+  position: absolute;
+  font-size: 200px;
+  font-family: "Londrina Solid", sans-serif;
+}
+.Rejbek {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.develop {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  grid-template-rows: 1fr;
+  font-family: "Londrina Solid", sans-serif;
+  color: white;
+  font-size: 54px;
+}
+.pozdrav {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  grid-template-rows: 1fr;
+  font-family: "Londrina Solid", sans-serif;
+  color: white;
+  font-size: 54px;
+}
+.pozdrav div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+}
+.Rejbek h1:nth-child(1) {
+  color: #fff;
+  /*   text-shadow: -2px 2px 0px #183954, -4px 4px 0px #183954, -6px 6px 0px #183954,
+    -8px 8px 0px #183954, -12px 12px 25px rgba(0, 0, 0, 0.5); */
+}
+.Rejbek h1:nth-child(2) {
+  color: #2196f3;
+  opacity: 0.5;
+  animation: animate 3s ease-in-out infinite;
+}
+.Rejbek h1:nth-child(3) {
+  opacity: 0.5;
+  color: #2196f3;
+  animation: animate 5s ease-in-out infinite;
+}
+
+.Rejbek h1:nth-child(4) {
+  opacity: 1;
+  color: #2196f3;
+  animation: animate 4s ease-in-out infinite;
+}
+.text_nahore {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  color: white;
+  font-family: "Fjalla One", sans-serif;
+  text-align: center;
+  font-size: 30px;
+  grid-column: 1/3;
+}
+.levonahore {
+  background-color: #d094e5;
+  border-radius: 50px;
+}
+.pravonahore {
+  background-color: #a3dcd4;
+  border-radius: 50px;
+}
+.levodole {
+  background-color: #e8b89c;
+  border-radius: 50px;
+}
+.pravodole {
+  background-color: #bddff9;
+  border-radius: 50px;
+}
+.content_work {
+  background-color: #145b5e;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 2fr;
+}
+.uppertext {
+  grid-column: 1/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.worknadpis {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+  align-items: center;
+  font-family: "Londrina Solid", sans-serif;
+}
+.worknadpis h1 {
+  font-size: 120px;
+  color: white;
+}
+.worknadpis p {
+  font-size: 40px;
+  color: white;
+}
+.worknadpis div:nth-child(1) {
+  padding-top: 40%;
+}
+.worknadpis div:nth-child(2) {
+  padding-bottom: 40%;
+}
+
+@keyframes animejsn {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0 53%,
+      26% 67%,
+      44% 73%,
+      55% 73%,
+      67% 69%,
+      77% 63%,
+      89% 54%,
+      100% 41%,
+      100% 99%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0% 77%,
+      16% 79%,
+      31% 80%,
+      44% 80%,
+      61% 75%,
+      74% 66%,
+      84% 58%,
+      100% 52%,
+      100% 99%,
+      0% 100%
+    );
+  }
+}

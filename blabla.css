@@ -167,10 +167,12 @@
   font-family: "Londrina Solid", sans-serif;
 }
 .worknadpis h1 {
-  font-size: 80px;
+  font-size: 120px;
+  color: white;
 }
 .worknadpis p {
-  font-size: 30px;
+  font-size: 40px;
+  color: white;
 }
 .worknadpis div:nth-child(1) {
   padding-top: 40%;
